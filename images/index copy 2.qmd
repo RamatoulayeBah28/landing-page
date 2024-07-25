@@ -1,0 +1,42 @@
+---
+title: "Project Beauty"
+description: |
+  promoting inclusion and deconstructing beauty standards through a fashion website that gives underrepresented models a space to share their stories and showcase their unique styles
+date: 2022-04-22
+image: projectbeautylogo.jpg
+draft: false
+---
+
+[{{< fa laptop >}} Project Beauty Website](https://ziaowens.wixsite.com/project-beauty){.btn target="_blank"} [{{< fa brands instagram >}} Project Beauty Instagram](https://www.instagram.com/projectbeauty.nl/){.btn target="_blank"}
+
+<br>
+
+# Project overview
+
+My first ever impactful project(!) was a Youth Social Entrepreneurship initiative project designed to address one of the [UN's Sustainable Development Goals](https://sdgs.un.org/goals). With four other students passionate about the topic, we created Project Beauty to promote inclusion, offer a platform to uplift the voices of underrepresented folks in the fashion industry and essentially, deconstruct beauty standards and its negative impacts. As we are all impacted by harmful / a lack of representation on a daily basis, this project was really important to us. We partnered with local thrift stores to promote sustainability and avoid fast-fashion and designed platforms to share the stories of models: an [instagram account](https://www.instagram.com/projectbeauty.nl/) with over 3,000 views and a [blog](https://ziaowens.wixsite.com/project-beauty/) all with a Y2K theme. At first we found it challenging to create a project from scratch, to know where to begin, or even how to finish everything on time in only three months but after a lot of communication, team-work and implementation of the SMART method to achieve our goals, we succeeded! From the creation of the logo to the final pitch, we won three awards worth a hundred euros each that we then redistributed to a fashion show event organized by a partnered group.
+
+Back then, I didn't know much about programming and I wish I had the necessary skills to develop our own website. This project really sparked my passion for software and how much you can accomplish with them. This valuable experience introduced me to Front-End Development and I'm eager to learn even more about it!
+
+<br>
+
+## <img src="ramapost.jpg" alt="One of my instagram post showcasing the thrifted items we received" class="img-styling" width="70%"/>
+
+::: {.gray-italic .center-text}
+Results from the photo shoot and my first experience being a model!
+:::
+
+<br>
+
+## <img src="yseteam.jpg" alt="Me and my team holding the awards we received" class="img-styling" width="70%"/>
+
+::: {.gray-italic .center-text}
+My awesome team and I holding the awards!
+:::
+
+<br>
+
+## <img src="awards.jpg" alt="The three awards we received: best overall idea, best action plan award, best pitch" class="img-styling" width="70%"/>
+
+::: {.gray-italic .center-text}
+After pitching our project in front of the jury, we received three out of four awards out of all the class of 2023 YSE (Youth Social Entrepreneurship) group projects
+:::

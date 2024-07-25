@@ -1,0 +1,55 @@
+---
+title: "A Squirrel's Tail"
+description: |
+  Valentine's Day themed platform game made under 48H as part of the first Macalester College Game Jam implemented using PyGame
+date: 2024-02-22
+image: gamepage.png
+draft: false
+---
+
+[{{< fa brands github >}} Source Code](https://github.com/RamatoulayeBah28/CupidJam){.btn target="_blank"}
+
+<br>
+
+# Project overview
+
+Cupid’s Jam, Macalester College's very first Valentine’s Day-themed game jam, organized by Game Devs at Mac consisted of making a game in 48 hours. Our game, 'A Squirrel's Tail', used PyGame to create a platform game involving a squirrel love story.
+
+With two other passionate CS majors, we worked on the aesthetic design, the basic structure of the game, and the implementation using Python. As a team consisting of only first-year students, this was a completely new challenge but we managed to combine our knowledge and work together to overcome it. Participating in this first game jam was a valuable learning experience, allowing me to apply my skills in a creative and challenging environment. I'm proud of what we accomplished in just 48 hours and excited to continue developing our game further.
+
+A Squirrel's Tail has been developed in Python programming language using the PyGame library to create a platform game where one squirrel is at the bottom of the screen and jumps on the wooden platforms to climb as high as possible toward its lover at the top without falling. The game includes obstacles and moving platforms that are also randomly generated for each round to keep the game interesting.
+
+With the limited time we had to complete the game, here are some modifications we would've added if we had more time:
+
+-   Have the play window the same size as the Main Menu window to make it an almost full-screen game
+-   Improve the accuracy of the collision between squirrel and platform
+-   Use the up or space keys to jump rather than having the squirrel consistently jump up and down
+-   Add more sound effects for when the squirrel jumps or when the user loses
+-   Add levels of difficulties (Level 1, Level 2, Level 3 etc), and at the end of each level the squirrel reaches its lover (instead of an endless high-score game)
+-   Collect hearts equivalent to points on the hard-to-reach platforms
+-   Add a cursor, a pause, quit, restart, and menu button to the Game window
+-   Design the Game Over screen to something related to the theme
+
+<br>
+
+## <img src="squirreltail.jpg" alt="Me holding the mic presenting the game to other participants at the Finale Event" class="img-styling" width="70%"/>
+
+::: {.gray-italic .center-text}
+Me presenting the game to the other participants of the Game Jam and to students and faculty members present at the Finale Event
+:::
+
+<br>
+
+## <img src="finalpic.jpg" alt="Picture with all the participants of the game jam" class="img-styling" width="70%"/>
+
+::: {.gray-italic .center-text}
+All the teams that participated in the Game Jam alongside members of the Game Devs at Mac organization
+:::
+
+<br>
+
+## <img src="teampic.png" alt="Me and the other member of my group as squirrels on motorcycles" class="img-styling" width="70%"/>
+
+::: {.gray-italic .center-text}
+Introductory picture to our team, Cupid's-Ame (Cupid's Aim / Game) with us as squirrels on motorcycles.
+:::

@@ -4888,9 +4888,10 @@ input, select, textarea {
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			width: 35%;
+			width: 70%;
 			min-width: 25rem;
 			border-radius: 0;
+		
 		}
 
 			.spotlight.style1 .image img {
