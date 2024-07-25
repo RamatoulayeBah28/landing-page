@@ -2118,7 +2118,68 @@ input, select, textarea {
 		padding: 0 2.5em;
 		text-overflow: ellipsis;
 		overflow: hidden;
+		
 	}
+
+	.popup-container {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, .3);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	.popup-container.active {
+		opacity: 1;
+		pointer-events: auto;
+		transition: .4s ease;
+	}
+
+	.popup-container .popup-box {
+		width: 500px;
+		background: #f2f2f2;
+		border-radius: 6px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+		padding: 30px;
+		transform: scale(0);
+	}
+
+	.popup-container.active .popup-box {
+		transform: scale(1);
+		transition: .4s ease;
+		transition-delay: .25s;
+	}
+
+	.popup-box h1 {
+		color: #333;
+		line-height: 1;
+		text-align: center;
+	}
+
+	.popup-box p {
+		color: #333;
+		margin: 12px 0 20px;
+	}
+
+	.popup-box .close-btn {
+		width: 100%;
+		height: 45px;
+		background: grey;
+		border-radius: 6px;
+		border: none;
+		outline: none;
+		box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+		cursor: pointer;
+		font-size: 18px;
+		color: #f2f2f2;
+		font-weight: 500;
+
+	}
+
 
 		input[type="submit"].icon:before,
 		input[type="reset"].icon:before,
@@ -4888,7 +4949,7 @@ input, select, textarea {
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			width: 70%;
+			width: 50%;
 			min-width: 25rem;
 			border-radius: 0;
 		
@@ -4939,6 +5000,7 @@ input, select, textarea {
 			.spotlight.style1 .image {
 				width: 50%;
 				min-width: 0;
+				
 			}
 
 		}

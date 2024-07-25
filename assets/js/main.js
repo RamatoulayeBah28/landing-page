@@ -6,6 +6,40 @@
 
 (function($) {
 
+	// const showPopup = document.querySelector('.spotlight.style1 .content .button');
+	// const popupContainer = document.querySelector('.popup-container');
+	// const closeBtn = document.querySelector('.close-btn');
+
+	// showPopup.onclick = () => {
+	// 	popupContainer.classList.add('active');
+	// }
+
+	// closeBtn.onclick = () => {
+	// 	popupContainer.classList.remove('active');
+	// }
+
+	// Select all "Learn More" buttons
+	const buttons = document.querySelectorAll('.spotlight .content .button');
+
+	// Loop through each button
+	buttons.forEach(button => {
+		// Find the corresponding popup container within the same section
+		const popupContainer = button.closest('section').querySelector('.popup-container');
+		const closeBtn = popupContainer.querySelector('.close-btn');
+
+		// Show the popup when the button is clicked
+		button.onclick = () => {
+			popupContainer.classList.add('active');
+		};
+
+		// Hide the popup when the close button is clicked
+		closeBtn.onclick = () => {
+			popupContainer.classList.remove('active');
+		};
+	});
+
+
+
 	var	$window = $(window),
 		$body = $('body'),
 		$wrapper = $('#wrapper');
