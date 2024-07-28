@@ -45,8 +45,29 @@
 							<h2>P r o j e c t s</h2>
 						</div>
 
+						<!-- WaterWise -->
+						<div class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+							<div class="content">
+								<h2>WaterWise</h2>
+								<p> water consumption tracker website to help you monitor and manage your water usage with ease, created for the Headstarter SWE Fellowship's first weekend hackathon and developed using HTML, CSS and JavaScript</p>
+								<ul class="actions stacked">
+									<li><a href="https://waterwise-watersustainability.netlify.app/" class="button">Learn More</a></li>
+								</ul>
+							</div>
+							<div class="image">
+								<img src="images/waterwise.png" alt="Ramatoulaye Bah"/>
+							</div>
+							<!-- <div class="popup-container">
+								<div class="popup-box">
+									<h1>Project Overview</h1>
+									<p>This project used this.</p>
+									<button class="close-btn">OK</button>
+								</div>
+							</div> -->
+						</section>
+
 						<!-- Two -->
-							<div class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+							<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 	
 								<div class="content">
 									<h2>Fashion Famous</h2>
@@ -59,13 +80,6 @@
 						 <div class="image">
 							<img src="images/mainMenu copy.png" alt="Ramatoulaye Bah" />
 						</div>
-						<!-- <div class="popup-container">
-							<div class="popup-box">
-								<h2>Project Overview</h2>
-								<p>This project used this.</p>
-								<button class="close-btn">OK</button>
-							</div>
-						</div> -->
 					</section>
 
 				<!-- Three -->
@@ -288,34 +302,16 @@
 							</div>
 						</div>
 					</section>
-
-					<script>
-						document.getElementById('contactForm').addEventListener('submit', function(event) {
-							event.preventDefault(); // Prevent the default form submission
-						
-							var formData = new FormData(this);
-						
-							fetch('send_mail.php', {
-								method: 'POST',
-								body: formData
-							})
-							.then(response => response.text())
-							.then(result => {
-								document.getElementById('contactForm').reset(); // Reset form fields
-								document.getElementById('successMessage').style.display = 'block'; // Show success message
-							})
-							.catch(error => {
-								console.error('Error:', error);
-							});
-						});
-						</script>
 						
 
 				<!-- Seven -->
 					<section class="wrapper style1 align-center">
 						<div class="inner medium">
 							<h2>L e t ' s &nbspc o n n e c t !</h2>
-							<form id="contactForm" method="post" action="send_mail.php">
+							
+							<!-- modify this form HTML and place wherever you want your form -->
+							<form id="contactForm" action="https://formspree.io/f/xanwepgn" method="POST">
+								<input type="hidden" name="_cc" value="ramatoulaye.bah2805@gmail.com">
 								<div class="fields">
 									<div class="field half">
 										<label for="name">Name</label>
@@ -330,13 +326,49 @@
 										<textarea name="message" id="message" rows="6"></textarea>
 									</div>
 								</div>
+								<!-- your other form fields go here -->
 								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+								<button type="submit">Send Message</button>
 								</ul>
+								<!-- <div id="successMessage" style="display:none;">Message sent successfully</div> -->
 							</form>
-							<div id="successMessage" style="display:none;">Message sent successfully</div>
 						</div>
 					</section>
+
+					<script>
+						document.addEventListener('DOMContentLoaded', function () {
+						  var contactForm = document.getElementById('contactForm');
+					  
+						  contactForm.addEventListener('submit', function (e) {
+							e.preventDefault();
+					  
+							var formData = new FormData(contactForm);
+					  
+							fetch(contactForm.action, {
+							  method: 'POST',
+							  body: formData,
+							  headers: {
+								'Accept': 'application/json'
+							  }
+							}).then(response => {
+							  if (response.ok) {
+								alert('Thank you for your message. It has been sent.');
+								contactForm.reset();
+							  } else {
+								response.json().then(data => {
+								  if (Object.hasOwn(data, 'errors')) {
+									alert(data["errors"].map(error => error["message"]).join(", "));
+								  } else {
+									alert('Oops! There was a problem submitting your form.');
+								  }
+								});
+							  }
+							}).catch(error => {
+							  alert('Oops! There was a problem submitting your form.');
+							});
+						  });
+						});
+					  </script>
 			
 
 				<!-- Footer -->
