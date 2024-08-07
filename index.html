@@ -22,6 +22,7 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		
 
 		<!-- Wrapper -->
 			<div id="wrapper" class="divided">
@@ -29,6 +30,34 @@
 				<!-- One -->
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
+							<nav id="desktop-nav">
+								<div>
+									<ul class="nav-links">
+										<li><a href="#about">About</a></li>
+										<li><a href="#projects">Projects</a></li>
+										<li><a href="#highlights">Highlights</a></li>
+										<li><a href="#resume">Resume</a></li>
+										<li><a href="#contact">Contact</a></li>
+					
+									</ul>
+								</div>
+							</nav>
+							<nav id="hamburger-nav">
+								<div class="hamburger-menu">
+									<div class="hamburger-icon" onclick="toggleMenu()">
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+									<div class="menu-links">
+										<li><a href="#about" onclick="toggleMenu()">About</a></li>
+										<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+										<li><a href="#highlights" onclick="toggleMenu()">Highlights</a></li>
+										<li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
+										<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+									</div>
+								</div>
+							</nav>
 							<h1>Ramatoulaye Bah</h1>
 							<p class="major"> Computer Science student at <a href="https://www.macalester.edu/">Macalester College</a> <hr> I plan on pursuing a Bachelor of Arts Degree in Computer Science and Linguistics with a minor in Spanish. Of French nationality and Guinean origin, I thrive to have a positive impact on my communities and I hope to use technology and the skills I foster daily as tools to achieve this goal. I am passionate about tech, soccer, languages, social justice, and discovering new things every day!</p>
 							<ul class="actions stacked">
@@ -44,9 +73,81 @@
 						<div class="inner">
 							<h2>P r o j e c t s</h2>
 						</div>
+						<section id="projects">
+							<p class="section_text_p1">Browse My Recent</p>
+							<h1 class="title">Projects</h1>
+							<div class="experience-details-container">
+								<div class="about-containers">
+								<div class="details-container color-container">
+									<div class="article-container">
+										<img src="/images/gamepage.png" alt="Project 1" class="project-img"
+										/>
+									</div>
+									<h2 class="experience-sub-title project-title">A Squirrel's Tail</h2>
+									<div class="btn-container">
+										<button
+											class="btn btn-color-2 project-btn" 
+											onclick="location.href='https://github.com/RamatoulayeBah28/CupidJam'"
+											>
+											GitHub
+										</button>
+										<button
+											class="btn btn-color-2 project-btn" 
+											onclick="location.href='https://github.com/RamatoulayeBah28/CupidJam'"
+											>
+											Live Demo
+										</button>
+									</div>
+								</div>
+								<div class="details-container color-container">
+									<div class="article-container">
+										<img src="/images/weather.png" alt="Project 3" class="project-img"
+										/>
+									</div>
+									<h2 class="experience-sub-title project-title">Weather Display</h2>
+									<div class="btn-container">
+										<button
+											class="btn btn-color-2 project-btn" 
+											onclick="location.href='https://github.com/RamatoulayeBah28/Weather-Display'"
+											>
+											GitHub
+										</button>
+										<button
+											class="btn btn-color-2 project-btn" 
+											onclick="location.href='https://github.com/RamatoulayeBah28/CupidJam'"
+											>
+											Live Demo
+										</button>
+									</div>
+								</div>
+								<div class="details-container color-container">
+									<div class="article-container">
+										<img src="/images/pantry.jpeg.png" alt="Project 2" class="project-img"
+										/>
+									</div>
+									<h2 class="experience-sub-title project-title">Pantry Tracker</h2>
+									<div class="btn-container">
+										<button
+											class="btn btn-color-2 project-btn" 
+											onclick="location.href='https://github.com/RamatoulayeBah28/Pantry-Tracker'"
+											>
+											GitHub
+										</button>
+										<button
+											class="btn btn-color-2 project-btn" 
+											onclick="location.href='https://youtu.be/XJ7RQF05Krs'"
+											>
+											Live Demo
+										</button>
+									</div>
+									</div>
+								</div>
+							</div>
+							<img src="images/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+						</section>
 
 						<!-- WaterWise -->
-						<div class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<!-- <div class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
 							<div class="content">
 								<h2>WaterWise</h2>
 								<p> water consumption tracker website to help you monitor and manage your water usage with ease, created for the Headstarter SWE Fellowship's first weekend hackathon and developed using HTML, CSS and JavaScript</p>
@@ -56,7 +157,7 @@
 							</div>
 							<div class="image">
 								<img src="images/waterwiselogo1.png" alt="Ramatoulaye Bah"/>
-							</div>
+							</div> -->
 							<!-- <div class="popup-container">
 								<div class="popup-box">
 									<h1>Project Overview</h1>
@@ -67,7 +168,7 @@
 						</section>
 
 						<!-- Two -->
-							<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+							<!-- <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 	
 								<div class="content">
 									<h2>Fashion Famous</h2>
@@ -79,11 +180,11 @@
 								</div>
 						 <div class="image">
 							<img src="images/mainMenu copy.png" alt="Ramatoulaye Bah" />
-						</div>
+						</div> -->
 					</section>
 
 				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+					<!-- <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>Project Beauty</h2>
 							<p>promoting inclusion and deconstructing beauty standards through a fashion website that gives underrepresented models a space to share their stories and showcase their unique styles</p>
@@ -92,7 +193,7 @@
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/projectbeautylogo.jpg" alt="Ramatoulaye Bah"/>
+							<img src="images/projectbeautylogo.jpg" alt="Ramatoulaye Bah"/> -->
 						</div>
 						<!-- <div class="popup-container">
 							<div class="popup-box">
@@ -104,7 +205,7 @@
 					</section>
 
 				<!-- Four -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<!-- <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>A Squirrel's Tail</h2>
 							<p>Valentine's Day themed platform game made under 48 hours as part of the first Macalester College Game Jam implemented using PyGame</p>
@@ -114,7 +215,7 @@
 						</div>
 						<div class="image">
 							<img src="images/gamepage.png" alt="Ramatoulaye Bah"/>
-						</div>
+						</div> -->
 						<!-- <div class="popup-container">
 							<div class="popup-box">
 								<h1>Project Overview</h1>
@@ -125,7 +226,7 @@
 					</section>
 
 				<!-- Additional one -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+					<!-- <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 						<div class="content">
 							<h2>Hangman Game</h2>
 							<p>a Macalester College themed classic hangman game implemented using Tkinter as part of my COMP 123 - Core Concepts in Computer Science final project</p>
@@ -135,7 +236,7 @@
 						</div>
 						<div class="image">
 							<img src="images/hangmangame.png" alt="" />
-						</div>
+						</div> -->
 						<!-- <div class="popup-container">
 							<div class="popup-box">
 								<h1>Project Overview</h1>
@@ -144,7 +245,7 @@
 							</div>
 						</div> -->
 					</section>
-				</section>
+				</section> 
 					
 
 				<!-- Five -->

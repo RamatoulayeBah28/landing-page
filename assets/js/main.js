@@ -4,6 +4,13 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+function toggleMenu() {
+	const menu = document.querySelector(".menu-links");
+	const icon = document.querySelector(".hamburger-icon");
+	menu.classList.toggle("open");
+	icon.classList.toggle("open");
+}
+
 (function($) {
 
 	// Select all "Learn More" buttons
